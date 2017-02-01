@@ -1,0 +1,45 @@
+# Run a incremental or full backup to a specified server/device.
+Param( [Parameter(Mandatory=$True)][ValidateNotNull()]$jobFile,[Switch]$Full,[Switch]$Test );CLS
+$cwd = Split-Path $MyInvocation.MyCommand.Path;CD $cwd
+# Variables
+$jobs = Import-Csv $jobFile -Delimiter "|" ; $jobs
+$Global:emailObjArray = @()
+$Global:Subject = "DO - $env:COMPUTERNAME Backup Report $((date).dayofweek) - Cooper"
+# Functions
+function Report-Msg ($type = "[INFO]",$msg,$hue = "Green") {
+		Write-Host "$(date) $type $msg" -ForeGroundColor $hue
+		Add-Content $logFile -Value "$(date) $type $msg"
+		$global:emailObjArray += New-Object PSObject -Prop @{ Date=$(date); Type=$type; Message=$msg }
+		if ( $type -eq "[ERROR]" ) { $global:Bcc = "servicedesk.chicousd.org" }
+	} # End Report-Msg
+    function Add-HomeDirectory ([String]$f_homeRoot,[String]$f_homeDir,[String]$f_samid,[String]$f_StaffSecu
+# Begin Backup via Job File
+Foreach ( $result in $jobs ) {
+	# Set loop variables
+	$excludeDirs = $null; $excludeFiles = $null
+	$srcPath = $result.srcPath; $dstServer = $result.dstServer; $dstShare = $result.dstShare; $dstPath = "\\$dstServer\$dstShare"
+	# Format Exlcuded items for ROBOCOPY parameters /XD /XF. This was a brain buster!
+	if ( $result.excludeDirs -ne $null ) { foreach ( $item in $result.excludeDirs.split(",") ){$excludeDirs = $excludeDirs+'"'+$item+'" '} }
+	if ( $result.excludeFiles -ne $null ) { foreach ( $item in $result.excludeFiles.split(",") ){$excludeFiles = $excludeFiles+'"'+$item+'" '} }
+	# "Press ENTER key to continue...";read-host
+	if ( (Test-Path $srcPath) -and (Test-Path $dstPath) ) {
+		if ( $Test -eq $True ) {$testSwtich = "/L";"Test Run...`n"} Else {$testSwtich = $null}
+		# Set Backup Type
+		if ( $Full -eq $True ){$type = "Full";$options = "/MIR"} 
+		else {$type = $(Date).DayofWeek;$options = "/S /M"}
+		$dstPath = "\\$dstServer\$dstShare\$type"
+		$logFile = "\\gears\Support\Scripts\Servers\Backup\logs\$ENV:COMPUTERNAME-$dstshare-to-$dstServer-$type.log"
+		# Delete Old Incremental Backups
+		IF ( ($type -ne "Full") -and (Test-Path $dstpath) ) {Remove-Item $dstpath -Recurse -Force -Whatif}
+		# Core Backup Command
+		"Source: $srcPath`nDestination: $dstPath`nOptions: $options`nexDirs: $excludeDirs`nexFiles: $excludeFiles"
+		ROBOCOPY $srcPath $dstPath /W:0 /R:0 /NFL /NDL $options /XD $excludeDirs /XF $excludeFiles $testSwtich /LOG:$logFile
+		
+	}
+	else { 
+		$errorLog = "\\gears\Support\Scripts\Servers\Backup\logs\$ENV:COMPUTERNAME-$dstshare-to-$dstServer-$type-ERROR.log"
+		Add-Content -Path $errorLog -Val "$(date) [ERROR] Problem with Path:$srcPath or Path:$dstPath"
+	}
+	# "Press ENTER key to continue...";read-host
+	\\gears\Support\Scripts\ps\Common\Send-HTMLEmail-02.ps1 $emailObjArray -Subject $Subject
+} # End Backup

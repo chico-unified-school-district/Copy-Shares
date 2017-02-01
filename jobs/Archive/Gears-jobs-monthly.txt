@@ -1,0 +1,6 @@
+srcPath|dstServer|dstShare|excludeDirs|excludeFiles
+E:\User|CS-STREETWISE|GEARS||
+E:\Data|CS-STREETWISE|GEARS||
+F:\Datas|CS-STREETWISE|GEARS||
+E:\ELD|CS-STREETWISE|GEARS||
+E:\IntersiteData|CS-STREETWISE|GEARS||

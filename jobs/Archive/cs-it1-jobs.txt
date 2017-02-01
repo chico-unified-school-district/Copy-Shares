@@ -1,0 +1,2 @@
+srcPath|dstServer|dstShare|excludeDirs|excludeFiles
+D:\Gears\Weekly\Datas\Teachers\Bruggeman|CSITECH.CHICO.USD|IT1BACKUP|*Temp,Adobe Premiere Pro Preview Files|desktop.ini,*.tmp,*.log

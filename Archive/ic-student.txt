@@ -1,0 +1,14 @@
+Shared resources at \\inspire-student
+
+
+
+Share name        Type  Used as  Comment  
+
+-------------------------------------------------------------------------------
+BC1StudentShare   Disk                    
+DATAS             Disk                    
+IT5Studentshare   Disk                    
+J226StudentShare  Disk                    
+Users             Disk                    
+The command completed successfully.
+

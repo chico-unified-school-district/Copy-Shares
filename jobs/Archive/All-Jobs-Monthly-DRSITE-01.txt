@@ -1,0 +1,12 @@
+srcServer|srcShare|dstServer|dstShare|excludeDirs|excludeFiles
+INSPIRE-SERVER1|User|dr-sitebackup|IC||*.mp4,*.avi,*.MTS,*.MPEG
+INSPIRE-SERVER1|Data|dr-sitebackup|IC||*.mp4,*.avi,*.MTS,*.MPEG
+INSPIRE-SERVER1|Support|dr-sitebackup|IC||*.mp4,*.avi,*.MTS,*.MPEG
+INSPIRE-SERVER1|UserS|dr-sitebackup|IC||*.mp4,*.avi,*.MTS,*.MPEG
+INSPIRE-SERVER1|DataS|dr-sitebackup|IC||*.mp4,*.avi,*.MTS,*.MPEG
+GEARS|User|dr-sitebackup|CSSTAFF||
+GEARS|Data|dr-sitebackup|CSSTAFF||
+GEARS|UserS|dr-sitebackup|CSSTUD||
+GEARS|DataS|dr-sitebackup|CSSTUD||
+SEASPRAY|Data|dr-sitebackup|PVSTAFF||
+SEASPRAY|DataS|dr-sitebackup|PVSTUD||

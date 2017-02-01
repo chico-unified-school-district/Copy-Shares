@@ -1,0 +1,6 @@
+srcServer|srcShare|dstServer|dstShare|excludeDirs|excludeFiles
+Inspire-Student|Datas|KUP|Inspire-Student|*Temp|*.tmp
+Inspire-Student|Users|KUP|Inspire-Student|AutoBackup|*.tmp
+Inspire-Student|BC1StudentShare|KUP|Inspire-Student|*Temp|*.tmp
+Inspire-Student|IT5Studentshare|KUP|Inspire-Student|Halo Combat Evolved|*.tmp
+Inspire-Student|J226StudentShare|KUP|Inspire-Student|Halo Combat Evolved,Updater5|*.tmp

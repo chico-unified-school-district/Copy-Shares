@@ -1,0 +1,12 @@
+Shared resources at \\inspire-staff
+
+
+
+Share name  Type  Used as  Comment  
+
+-------------------------------------------------------------------------------
+Data        Disk                    
+Support     Disk                    
+User        Disk                    
+The command completed successfully.
+

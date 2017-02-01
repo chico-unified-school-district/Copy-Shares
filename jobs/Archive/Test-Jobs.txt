@@ -1,0 +1,4 @@
+srcServer|srcShare|dstServer|dstShare|excludeDirs|excludeFiles
+Inspire-Media|music|KUP|Inspire-Media|DerpFolder|DerpFile
+Inspire-Media|media|KUP|Inspire-Media||
+Inspire-Media|Ferps|Derpia|Inspire-Media||

@@ -1,0 +1,17 @@
+srcServer|srcShare|dstServer|dstShare|excludeDirs|excludeFiles
+Gears|Data|KUP|Gears||
+Gears|Datas|KUP|Gears||
+Gears|User|KUP|Gears||
+Gears|Users|KUP|Gears||
+Gears|ELD|KUP|Gears||
+Gears|ArtCurriculum|KUP|Gears||
+Gears|ForeignLanguage|KUP|Gears||
+Gears|Support|KUP|Gears||
+Inspire-SERVER1|User|KUP|Inspire-SERVER1||*.MTS
+Inspire-SERVER1|Data|KUP|Inspire-SERVER1||*.MTS
+Inspire-SERVER1|Support|KUP|Inspire-SERVER1||*.MTS
+Inspire-SERVER1|Datas|KUP|Inspire-SERVER1||*.MTS
+Seaspray|UserS|KUP|Seaspray||
+Seaspray|DATA|KUP|Seaspray||
+Seaspray|DATAS|KUP|Seaspray||
+CS-ROPMEDIA|Media|KUP|CS-ROPMEDIA||

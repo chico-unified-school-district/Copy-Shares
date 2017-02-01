@@ -1,0 +1,32 @@
+Shared resources at \\seaspray
+
+
+
+Share name              Type  Used as  Comment  
+
+-------------------------------------------------------------------------------
+ArtLab                  Disk                    
+backup                  Disk                    
+c6studentshare          Disk                    
+careercenter            Disk                    
+d3studentshare          Disk                    
+data                    Disk                    
+datas                   Disk                    
+e2studentshare          Disk                    
+FV-DataS                Disk                    
+FV-UserS                Disk                    
+HugeDrive               Disk                    
+LearningResourceCenter  Disk                    
+m4studentshare          Disk                    
+p1studentshare          Disk                    
+Photo                   Disk                    
+pvlib                   Disk                    
+Saga                    Disk                    
+support                 Disk                    
+teacher                 Disk                    
+user                    Disk                    
+users                   Disk                    
+VPRepository            Disk                    
+Yearbook                Disk                    
+The command completed successfully.
+

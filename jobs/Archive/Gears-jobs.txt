@@ -1,0 +1,7 @@
+srcServer|srcShare|dstServer|dstShare|excludeDirs|excludeFiles
+Gears|Data|KUP|Gears|*Temp|*.tmp
+Gears|User|KUP|Gears|AutoBackup|*.tmp
+Gears|ELD|KUP|Gears|*Temp|*.tmp
+Gears|Datas|KUP|Gears|Halo Combat Evolved|*.tmp
+Gears|Users|KUP|Gears|Halo Combat Evolved,Updater5|*.tmp
+Gears|Support|KUP|Gears|*Temp|*.tmp

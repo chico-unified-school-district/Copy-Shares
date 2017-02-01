@@ -1,0 +1,12 @@
+Shared resources at \\inspire-media
+
+
+
+Share name  Type  Used as  Comment  
+
+-------------------------------------------------------------------------------
+Media       Disk                    
+Music       Disk                    
+Yearbook    Disk                    
+The command completed successfully.
+

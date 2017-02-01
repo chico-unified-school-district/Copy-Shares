@@ -1,0 +1,3 @@
+srcPath|dstServer|dstShare|excludeDirs|excludeFiles
+E:\datas|KUP|SEASPRAY||
+F:\Data\user|KUP|SEASPRAY||
