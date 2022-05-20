@@ -1,0 +1,5 @@
+06/02/2019 01:00:03 [SCRIPT] REWIND | veritas | Backup-Shares.3.0.ps1 \\mirage\Scripts\Servers\Backup\jobs\High-Site-Servers.03.csv -Full True -Test False
+06/02/2019 01:00:03 [INFO] Src:\\SPRIGE\data | Dst:\\10.189.19.123\Utility\Full\SPRIGE\data | Options:/E /M
+06/02/2019 01:00:04 [INFO] Src:\\SPRIGE\datas | Dst:\\10.189.19.123\Utility\Full\SPRIGE\datas | Options:/E /M
+06/02/2019 01:04:01 [INFO] Src:\\SPRIGE\user | Dst:\\10.189.19.123\Utility\Full\SPRIGE\user | Options:/E /M
+06/02/2019 01:25:01 [INFO] No Powershell errors reported.

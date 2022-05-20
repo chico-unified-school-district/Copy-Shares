@@ -1,0 +1,49 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : Sun May 19 18:00:09 2019
+
+   Source : \\Gears\Users\
+     Dest : \\KUP\Gears\Full\Users\
+
+    Files : *.*
+	    
+Exc Files : *.log
+	    *desktop.ini
+	    *.db
+	    *.crdownload
+	    *.tmp
+	    *.mp4
+	    *.avi
+	    *.MTS
+	    *.MPEG
+	    *.MOV
+	    
+ Exc Dirs : Temp
+	    Adobe Premiere Pro Preview Files
+	    .BIN
+	    System Volume Information
+	    Autobackup
+	    Updater5
+	    Halo Combat Evolved
+	    
+  Options : *.* /NDL /NFL /S /E /COPY:DAT /M /XA:S /R:0 /W:0 
+
+------------------------------------------------------------------------------
+
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :    160695      4355    156340         0         0      5815
+   Files :   1184989     38742   1146247         0         0     33560
+   Bytes :   1.531 t  45.540 g   1.486 t         0         0 138.842 g
+   Times :   2:37:46   0:41:39                       0:00:00   1:56:07
+
+
+   Speed :            19567215 Bytes/sec.
+   Speed :            1119.645 MegaBytes/min.
+
+   Ended : Sun May 19 20:37:55 2019

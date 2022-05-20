@@ -1,0 +1,3 @@
+06/16/2019 18:00:06 [SCRIPT] KUP | veritas | Backup-Shares.ps1 \\mirage\Scripts\Servers\Backup\jobs\Gears-2.txt -Full True -Test False
+06/16/2019 18:00:06 [INFO] Src:\\Gears\Users | Dst:\\KUP\Gears\Full\Users | Options:/E /M
+06/16/2019 20:02:01 [INFO] No Powershell errors reported.

@@ -1,0 +1,25 @@
+07/30/2019 09:16:58 [SCRIPT] KUP | cooperj | Backup-Shares.4.0.PS1 .\jobs\Primary-Site-Servers.01.csv -Full False -Test False
+07/30/2019 09:16:58 [ERROR] Problem with Dst Path: \\KUP\ElementaryShareBackups
+07/30/2019 09:16:59 [ERROR] Problem with Dst Path: \\KUP\ElementaryShareBackups
+07/30/2019 09:16:59 [ERROR] Problem with Dst Path: \\KUP\ElementaryShareBackups
+07/30/2019 09:16:59 [ERROR] Problem with Dst Path: \\KUP\ElementaryShareBackups
+07/30/2019 09:16:59 [ERROR] Problem with Dst Path: \\KUP\ElementaryShareBackups
+07/30/2019 09:16:59 [ERROR] Problem with Dst Path: \\KUP\ElementaryShareBackups
+07/30/2019 09:16:59 [ERROR] Problem with Dst Path: \\KUP\ElementaryShareBackups
+07/30/2019 09:16:59 [ERROR] Problem with Dst Path: \\KUP\ElementaryShareBackups
+07/30/2019 09:16:59 [ERROR] Problem with Dst Path: \\KUP\ElementaryShareBackups
+07/30/2019 09:17:00 [ERROR] Problem with Dst Path: \\KUP\ElementaryShareBackups
+07/30/2019 09:17:00 [ERROR] Problem with Dst Path: \\KUP\ElementaryShareBackups
+07/30/2019 09:17:00 [ERROR] Problem with Dst Path: \\KUP\ElementaryShareBackups
+07/30/2019 09:17:01 [ERROR] Problem with Dst Path: \\KUP\ElementaryShareBackups
+07/30/2019 09:17:01 [ERROR] Problem with Dst Path: \\KUP\ElementaryShareBackups
+07/30/2019 09:17:01 [ERROR] Problem with Dst Path: \\KUP\ElementaryShareBackups
+07/30/2019 09:17:01 [ERROR] Problem with Dst Path: \\KUP\ElementaryShareBackups
+07/30/2019 09:17:02 [ERROR] Problem with Dst Path: \\KUP\ElementaryShareBackups
+07/30/2019 09:17:02 [ERROR] Problem with Dst Path: \\KUP\ElementaryShareBackups
+07/30/2019 09:17:02 [ERROR] Problem with Dst Path: \\KUP\ElementaryShareBackups
+07/30/2019 09:17:02 [ERROR] Problem with Dst Path: \\KUP\ElementaryShareBackups
+07/30/2019 09:17:02 [ERROR] Problem with Dst Path: \\KUP\ElementaryShareBackups
+07/30/2019 09:17:02 [ERROR] Problem with Dst Path: \\KUP\ElementaryShareBackups
+07/30/2019 09:17:02 [ERROR] Problem with Dst Path: \\KUP\ElementaryShareBackups
+07/30/2019 09:17:03 [ERROR] Problem with Dst Path: \\KUP\ElementaryShareBackups

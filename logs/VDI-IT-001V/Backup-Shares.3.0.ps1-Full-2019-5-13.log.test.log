@@ -1,0 +1,2 @@
+05/13/2019 08:17:40 [SCRIPT] VDI-IT-001V | jcooper | Backup-Shares.3.0.ps1 .\jobs\Gears.csv -Full True -Test True
+05/13/2019 08:17:40 [INFO] Src:\\GEARS\User | Dst:\\10.189.19.123\Utility\Full\GEARS\User | Options:/E /M

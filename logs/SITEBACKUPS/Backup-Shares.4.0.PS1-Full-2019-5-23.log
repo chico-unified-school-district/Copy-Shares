@@ -1,0 +1,88 @@
+05/23/2019 17:00:04 [SCRIPT] SITEBACKUPS | veritas | Backup-Shares.4.0.PS1 \\mirage\Scripts\Servers\Backup\jobs\DR-Site-Servers.01.csv -Full True -Test False
+05/23/2019 17:00:04 [INFO] Src:\\ch-pounce\data | Dst:\\Sitebackups\Backups\Full\ch-pounce\data | Options:/E /M
+05/23/2019 17:00:05 [INFO] ROBOCOPY \\ch-pounce\data \\Sitebackups\Backups\Full\ch-pounce\data /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\ch-pounce\data-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:00:06 [INFO] Src:\\ch-pounce\datas | Dst:\\Sitebackups\Backups\Full\ch-pounce\datas | Options:/E /M
+05/23/2019 17:00:06 [INFO] ROBOCOPY \\ch-pounce\datas \\Sitebackups\Backups\Full\ch-pounce\datas /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\ch-pounce\datas-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:00:07 [INFO] Src:\\ch-pounce\users | Dst:\\Sitebackups\Backups\Full\ch-pounce\users | Options:/E /M
+05/23/2019 17:00:07 [INFO] ROBOCOPY \\ch-pounce\users \\Sitebackups\Backups\Full\ch-pounce\users /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\ch-pounce\users-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:00:10 [INFO] Src:\\ci-bobcat\data | Dst:\\Sitebackups\Backups\Full\ci-bobcat\data | Options:/E /M
+05/23/2019 17:00:10 [INFO] ROBOCOPY \\ci-bobcat\data \\Sitebackups\Backups\Full\ci-bobcat\data /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\ci-bobcat\data-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:00:11 [INFO] Src:\\ci-bobcat\datas | Dst:\\Sitebackups\Backups\Full\ci-bobcat\datas | Options:/E /M
+05/23/2019 17:00:11 [INFO] ROBOCOPY \\ci-bobcat\datas \\Sitebackups\Backups\Full\ci-bobcat\datas /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\ci-bobcat\datas-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:00:19 [INFO] Src:\\ci-bobcat\users | Dst:\\Sitebackups\Backups\Full\ci-bobcat\users | Options:/E /M
+05/23/2019 17:00:19 [INFO] ROBOCOPY \\ci-bobcat\users \\Sitebackups\Backups\Full\ci-bobcat\users /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\ci-bobcat\users-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:00:24 [INFO] Src:\\ci-bobcat\support | Dst:\\Sitebackups\Backups\Full\ci-bobcat\support | Options:/E /M
+05/23/2019 17:00:24 [INFO] ROBOCOPY \\ci-bobcat\support \\Sitebackups\Backups\Full\ci-bobcat\support /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\ci-bobcat\support-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:00:26 [INFO] Src:\\ho-hook\data | Dst:\\Sitebackups\Backups\Full\ho-hook\data | Options:/E /M
+05/23/2019 17:00:26 [INFO] ROBOCOPY \\ho-hook\data \\Sitebackups\Backups\Full\ho-hook\data /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\ho-hook\data-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:00:45 [INFO] Src:\\ho-hook\datas | Dst:\\Sitebackups\Backups\Full\ho-hook\datas | Options:/E /M
+05/23/2019 17:00:45 [INFO] ROBOCOPY \\ho-hook\datas \\Sitebackups\Backups\Full\ho-hook\datas /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\ho-hook\datas-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:00:54 [INFO] Src:\\ho-hook\users | Dst:\\Sitebackups\Backups\Full\ho-hook\users | Options:/E /M
+05/23/2019 17:00:54 [INFO] ROBOCOPY \\ho-hook\users \\Sitebackups\Backups\Full\ho-hook\users /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\ho-hook\users-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:00:59 [INFO] Src:\\jm-wildrider\data | Dst:\\Sitebackups\Backups\Full\jm-wildrider\data | Options:/E /M
+05/23/2019 17:00:59 [INFO] ROBOCOPY \\jm-wildrider\data \\Sitebackups\Backups\Full\jm-wildrider\data /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\jm-wildrider\data-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:02:14 [INFO] Src:\\jm-wildrider\datas | Dst:\\Sitebackups\Backups\Full\jm-wildrider\datas | Options:/E /M
+05/23/2019 17:02:14 [INFO] ROBOCOPY \\jm-wildrider\datas \\Sitebackups\Backups\Full\jm-wildrider\datas /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\jm-wildrider\datas-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:02:57 [INFO] Src:\\jm-wildrider\users | Dst:\\Sitebackups\Backups\Full\jm-wildrider\users | Options:/E /M
+05/23/2019 17:02:57 [INFO] ROBOCOPY \\jm-wildrider\users \\Sitebackups\Backups\Full\jm-wildrider\users /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\jm-wildrider\users-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:03:01 [INFO] Src:\\ma-skyfire\data | Dst:\\Sitebackups\Backups\Full\ma-skyfire\data | Options:/E /M
+05/23/2019 17:03:01 [INFO] ROBOCOPY \\ma-skyfire\data \\Sitebackups\Backups\Full\ma-skyfire\data /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\ma-skyfire\data-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:03:03 [INFO] Src:\\ma-skyfire\datas | Dst:\\Sitebackups\Backups\Full\ma-skyfire\datas | Options:/E /M
+05/23/2019 17:03:03 [INFO] ROBOCOPY \\ma-skyfire\datas \\Sitebackups\Backups\Full\ma-skyfire\datas /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\ma-skyfire\datas-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:03:05 [INFO] Src:\\ma-skyfire\users | Dst:\\Sitebackups\Backups\Full\ma-skyfire\users | Options:/E /M
+05/23/2019 17:03:05 [INFO] ROBOCOPY \\ma-skyfire\users \\Sitebackups\Backups\Full\ma-skyfire\users /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\ma-skyfire\users-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:03:09 [INFO] Src:\\ma-skyfire\support | Dst:\\Sitebackups\Backups\Full\ma-skyfire\support | Options:/E /M
+05/23/2019 17:03:09 [INFO] ROBOCOPY \\ma-skyfire\support \\Sitebackups\Backups\Full\ma-skyfire\support /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\ma-skyfire\support-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:03:12 [INFO] Src:\\nd-snapdragon\data | Dst:\\Sitebackups\Backups\Full\nd-snapdragon\data | Options:/E /M
+05/23/2019 17:03:13 [INFO] ROBOCOPY \\nd-snapdragon\data \\Sitebackups\Backups\Full\nd-snapdragon\data /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\nd-snapdragon\data-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:03:22 [INFO] Src:\\nd-snapdragon\datas | Dst:\\Sitebackups\Backups\Full\nd-snapdragon\datas | Options:/E /M
+05/23/2019 17:03:22 [INFO] ROBOCOPY \\nd-snapdragon\datas \\Sitebackups\Backups\Full\nd-snapdragon\datas /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\nd-snapdragon\datas-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:03:29 [INFO] Src:\\nd-snapdragon\users | Dst:\\Sitebackups\Backups\Full\nd-snapdragon\users | Options:/E /M
+05/23/2019 17:03:29 [INFO] ROBOCOPY \\nd-snapdragon\users \\Sitebackups\Backups\Full\nd-snapdragon\users /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\nd-snapdragon\users-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:03:33 [INFO] Src:\\lc-cheetah\data | Dst:\\Sitebackups\Backups\Full\lc-cheetah\data | Options:/E /M
+05/23/2019 17:03:33 [INFO] ROBOCOPY \\lc-cheetah\data \\Sitebackups\Backups\Full\lc-cheetah\data /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\lc-cheetah\data-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:03:34 [INFO] Src:\\lc-cheetah\datas | Dst:\\Sitebackups\Backups\Full\lc-cheetah\datas | Options:/E /M
+05/23/2019 17:03:34 [INFO] ROBOCOPY \\lc-cheetah\datas \\Sitebackups\Backups\Full\lc-cheetah\datas /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\lc-cheetah\datas-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:04:07 [INFO] Src:\\lc-cheetah\users | Dst:\\Sitebackups\Backups\Full\lc-cheetah\users | Options:/E /M
+05/23/2019 17:04:07 [INFO] ROBOCOPY \\lc-cheetah\users \\Sitebackups\Backups\Full\lc-cheetah\users /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\lc-cheetah\users-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:04:19 [INFO] Src:\\lc-cheetah\support | Dst:\\Sitebackups\Backups\Full\lc-cheetah\support | Options:/E /M
+05/23/2019 17:04:19 [INFO] ROBOCOPY \\lc-cheetah\support \\Sitebackups\Backups\Full\lc-cheetah\support /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\lc-cheetah\support-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:04:58 [INFO] Src:\\parkview-as\data | Dst:\\Sitebackups\Backups\Full\parkview-as\data | Options:/E /M
+05/23/2019 17:04:59 [INFO] ROBOCOPY \\parkview-as\data \\Sitebackups\Backups\Full\parkview-as\data /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\parkview-as\data-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:05:34 [INFO] Src:\\parkview-as\datas | Dst:\\Sitebackups\Backups\Full\parkview-as\datas | Options:/E /M
+05/23/2019 17:05:34 [INFO] ROBOCOPY \\parkview-as\datas \\Sitebackups\Backups\Full\parkview-as\datas /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\parkview-as\datas-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:06:28 [INFO] Src:\\parkview-as\users | Dst:\\Sitebackups\Backups\Full\parkview-as\users | Options:/E /M
+05/23/2019 17:06:28 [INFO] ROBOCOPY \\parkview-as\users \\Sitebackups\Backups\Full\parkview-as\users /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\parkview-as\users-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:07:05 [INFO] Src:\\parkview-as\support | Dst:\\Sitebackups\Backups\Full\parkview-as\support | Options:/E /M
+05/23/2019 17:07:05 [INFO] ROBOCOPY \\parkview-as\support \\Sitebackups\Backups\Full\parkview-as\support /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\parkview-as\support-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:07:30 [INFO] Src:\\ew-ramhorn\data | Dst:\\Sitebackups\Backups\Full\ew-ramhorn\data | Options:/E /M
+05/23/2019 17:07:30 [INFO] ROBOCOPY \\ew-ramhorn\data \\Sitebackups\Backups\Full\ew-ramhorn\data /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\ew-ramhorn\data-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:12:22 [INFO] Src:\\ew-ramhorn\datas | Dst:\\Sitebackups\Backups\Full\ew-ramhorn\datas | Options:/E /M
+05/23/2019 17:12:23 [INFO] ROBOCOPY \\ew-ramhorn\datas \\Sitebackups\Backups\Full\ew-ramhorn\datas /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\ew-ramhorn\datas-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:12:38 [INFO] Src:\\ew-ramhorn\users | Dst:\\Sitebackups\Backups\Full\ew-ramhorn\users | Options:/E /M
+05/23/2019 17:12:38 [INFO] ROBOCOPY \\ew-ramhorn\users \\Sitebackups\Backups\Full\ew-ramhorn\users /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\ew-ramhorn\users-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:12:59 [INFO] Src:\\ew-ramhorn\support | Dst:\\Sitebackups\Backups\Full\ew-ramhorn\support | Options:/E /M
+05/23/2019 17:12:59 [INFO] ROBOCOPY \\ew-ramhorn\support \\Sitebackups\Backups\Full\ew-ramhorn\support /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\ew-ramhorn\support-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:13:00 [INFO] Src:\\ro-raccoon\data | Dst:\\Sitebackups\Backups\Full\ro-raccoon\data | Options:/E /M
+05/23/2019 17:13:00 [INFO] ROBOCOPY \\ro-raccoon\data \\Sitebackups\Backups\Full\ro-raccoon\data /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\ro-raccoon\data-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:13:26 [INFO] Src:\\ro-raccoon\datas | Dst:\\Sitebackups\Backups\Full\ro-raccoon\datas | Options:/E /M
+05/23/2019 17:13:26 [INFO] ROBOCOPY \\ro-raccoon\datas \\Sitebackups\Backups\Full\ro-raccoon\datas /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\ro-raccoon\datas-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:13:31 [INFO] Src:\\ro-raccoon\users | Dst:\\Sitebackups\Backups\Full\ro-raccoon\users | Options:/E /M
+05/23/2019 17:13:31 [INFO] ROBOCOPY \\ro-raccoon\users \\Sitebackups\Backups\Full\ro-raccoon\users /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\ro-raccoon\users-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:15:35 [INFO] Src:\\ro-raccoon\support | Dst:\\Sitebackups\Backups\Full\ro-raccoon\support | Options:/E /M
+05/23/2019 17:15:35 [INFO] ROBOCOPY \\ro-raccoon\support \\Sitebackups\Backups\Full\ro-raccoon\support /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\ro-raccoon\support-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:15:50 [INFO] Src:\\sh-searchlight\data | Dst:\\Sitebackups\Backups\Full\sh-searchlight\data | Options:/E /M
+05/23/2019 17:15:50 [INFO] ROBOCOPY \\sh-searchlight\data \\Sitebackups\Backups\Full\sh-searchlight\data /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\sh-searchlight\data-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:16:07 [INFO] Src:\\sh-searchlight\datas | Dst:\\Sitebackups\Backups\Full\sh-searchlight\datas | Options:/E /M
+05/23/2019 17:16:08 [INFO] ROBOCOPY \\sh-searchlight\datas \\Sitebackups\Backups\Full\sh-searchlight\datas /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\sh-searchlight\datas-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:16:40 [INFO] Src:\\sh-searchlight\users | Dst:\\Sitebackups\Backups\Full\sh-searchlight\users | Options:/E /M
+05/23/2019 17:16:40 [INFO] ROBOCOPY \\sh-searchlight\users \\Sitebackups\Backups\Full\sh-searchlight\users /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\sh-searchlight\users-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:16:53 [INFO] Src:\\sv-sam\data | Dst:\\Sitebackups\Backups\Full\sv-sam\data | Options:/E /M
+05/23/2019 17:16:53 [INFO] ROBOCOPY \\sv-sam\data \\Sitebackups\Backups\Full\sv-sam\data /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\sv-sam\data-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:18:07 [INFO] Src:\\sv-sam\datas | Dst:\\Sitebackups\Backups\Full\sv-sam\datas | Options:/E /M
+05/23/2019 17:18:07 [INFO] ROBOCOPY \\sv-sam\datas \\Sitebackups\Backups\Full\sv-sam\datas /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\sv-sam\datas-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:18:34 [INFO] Src:\\sv-sam\users | Dst:\\Sitebackups\Backups\Full\sv-sam\users | Options:/E /M
+05/23/2019 17:18:35 [INFO] ROBOCOPY \\sv-sam\users \\Sitebackups\Backups\Full\sv-sam\users /E /M /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\sv-sam\users-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:18:45 [INFO] Src:\\sv-sam\support | Dst:\\Sitebackups\Backups\Full\sv-sam\support | Options:/E /M
+05/23/2019 17:18:46 [INFO] ROBOCOPY \\sv-sam\support \\Sitebackups\Backups\Full\sv-sam\support /E /M /XD Temp Autobackup Updater5 Software Installs /XF *.log *desktop.ini *.db *.crdownload *.tmp /LOG:.\logs\sv-sam\support-to-Sitebackups-Full-2019-5-23.log /W:0 /R:0 /NFL /NDL /XA:S 
+05/23/2019 17:19:22 [INFO] No Powershell errors reported.

@@ -1,0 +1,856 @@
+
+-------------------------------------------------------------------------------
+   ROBOCOPY     ::     Robust File Copy for Windows                              
+-------------------------------------------------------------------------------
+
+  Started : Sat May 18 03:26:04 2019
+
+   Source : \\Seaspray\DATA\
+     Dest : \\KUP\Seaspray\Full\DATA\
+
+    Files : *.*
+	    
+Exc Files : *.log
+	    *desktop.ini
+	    *.db
+	    *.crdownload
+	    *.tmp
+	    *.mp4
+	    *.avi
+	    *.MTS
+	    *.MPEG
+	    *.MOV
+	    
+ Exc Dirs : Temp
+	    Adobe Premiere Pro Preview Files
+	    .BIN
+	    System Volume Information
+	    Autobackup
+	    Updater5
+	    Halo Combat Evolved
+	    
+  Options : *.* /NDL /NFL /S /E /COPY:DAT /M /XA:S /R:0 /W:0 
+
+------------------------------------------------------------------------------
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Demetrio Gallardo\L1.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Demetrio Gallardo\L2.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Demetrio Gallardo\L3.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\64DD tables.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\A sad fall.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\At a recent meeting the department heads recommended that the memos be proceeds on plain paper instead of preprinted forms.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\Book1.xlsx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\Candy sales.xlsx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\chapter seven vocab.xlsx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\Checkbook.xlsx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\Coins.xlsx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\Computer application.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\Copy of TEST 8-1.xls
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\Creating and formatting titles.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\Devan Derks.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\Effective Study.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\formula examples.xlsx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\grades.xlsx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\L10.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\L11.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\l12.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\l13.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\l14.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\l15.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\l16.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\l17.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\l18.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\l19.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\l25.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\l7.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\L9.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\Metorologgy.xlsx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\Miss Pikki Samuels.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\Nu Tech  Celluars.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\Nudelmans Gym.xlsx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\p56.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\p68.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\Pariscope tables..docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\Pizza palace.xlsx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\Quizz Thingy.xlsx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\Sales for 2012.xlsx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\speed drill 2424.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\speed typing Lesson 3452.docx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\Squeaky clean Carzz.xlsx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\student Stats.xlsx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\swin meet.xlsx
+Access is denied.
+
+2019/05/18 03:29:45 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\Temp conversation.xlsx
+Access is denied.
+
+2019/05/18 03:29:46 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\TERMS AND CONDITIONS powerpoint.pptx
+Access is denied.
+
+2019/05/18 03:29:46 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\TERMS AND DEFINITIONS.doc
+Access is denied.
+
+2019/05/18 03:29:46 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\THE VALUE OF WORK EXPERIENCE.docx
+Access is denied.
+
+2019/05/18 03:29:46 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\Tickets.xlsx
+Access is denied.
+
+2019/05/18 03:29:46 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\track Team.xlsx
+Access is denied.
+
+2019/05/18 03:29:46 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\Upgrade costs.xlsx
+Access is denied.
+
+2019/05/18 03:29:46 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\devianna\Words.docx
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\chart project.xlsx
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\chart.xlsx
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\Copy of Aquarium Test (2) d.xls
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\Kyle.wmv
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS1\AccessS1.zip
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS2\NPCGrades2.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS2\PTCostumeInv2.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS2\WEEmployees2.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS2\WEEmployees21.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS2\WEEmployees2Relshp.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS2\WEEmployees2Relshp1.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS2\WEPurchases2.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS3\NPCGrades3.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS3\PTCostumeInv3.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS3\PTLogo-Small.jpg
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS3\TWBLogo-Small.jpg
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS3\WBSpecialEvents3.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS3\WEEmployees3.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS3\WELogo-Small.jpg
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS3\WEVendors3.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS3 - Copy\NPCGrades3.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS3 - Copy\PTCostumeInv3.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS3 - Copy\PTLogo-Small.jpg
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS3 - Copy\TWBLogo-Small.jpg
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS3 - Copy\WBSpecialEvents3.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS3 - Copy\WEEmployees3.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS3 - Copy\WELogo-Small.jpg
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS3 - Copy\WEVendors3.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS4\canada_flag.jpg
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS4\Classroom1.jpg
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS4\Employees1.jpg
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS4\PTCostumeInv4.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS4\WBInventory4.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS4\WBSpecialEvents4.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS4\WEDistributors4.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\AccessS4\WEEmployees4.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\Integrating2\FCTBookings.xlsx
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\Integrating2\FCTCommissions.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\Integrating2\NPCBegThGrades.xlsx
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\Integrating2\NPCStudentGrades.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\Integrating2\NPCTRA220.xlsx
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\Integrating2\PTCostumeHours.xlsx
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\Integrating2\PTCostumes.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\Integrating2\WBSupplies.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\Access Files for Students\Integrating2\WEDistributors.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\my access files\WEDistributors1.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\my access files\WEEmployees2.accdb
+Access is denied.
+
+2019/05/18 03:29:51 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\my access files\book access files\boat storage.accdb
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\my access files\Database handouts from Minsart\IVY U ATHLETES database kyle mitchell.accdb
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\my access files\section 2\files for section 2\Contracts table.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\my access files\section 2\files for section 2\WEEmployees2 40.accdb
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\my access files\section 2\files for section 2\WEEmployees2Relshp 40.accdb
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\my access files\section 3\WEEmployees3 40.accdb
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\my access files\section 3\files for section 3\AccessS3\NPCGrades3.accdb
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\my access files\section 3\files for section 3\AccessS3\PTCostumeInv3.accdb
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\my access files\section 3\files for section 3\AccessS3\PTLogo-Small.jpg
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\my access files\section 3\files for section 3\AccessS3\TWBLogo-Small.jpg
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\my access files\section 3\files for section 3\AccessS3\WBSpecialEvents3.accdb
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\my access files\section 3\files for section 3\AccessS3\WEEmployees3.accdb
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\my access files\section 3\files for section 3\AccessS3\WELogo-Small.jpg
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\access\my access files\section 3\files for section 3\AccessS3\WEVendors3.accdb
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\buisness letter40.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\chart project.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\chewing tobacco.pptx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\Computer Applications.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\dear jack.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\Effective study.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\jobs!!!!!.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\Keeping the Law and Order.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\L10.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\L11.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\L12.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\L13.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\L14.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\L15.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\L16.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\L17.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\L18.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\L19.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\L20.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\L21.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\L24.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\L25.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\L26.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\L27.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\L28.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\L29.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\l4.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\L5.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\L6.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\L7.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\L8.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\L9.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\LWS 1.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\Lws2 part 2.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\lws3.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\NET PROVIDER.xls
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\PAYROLL.xls
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\personal letter to howard.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\the value of work experince.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\timing 16b.txt
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\chart packet\aquarium modified excersice 3.xls
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\chart packet\barry bonds.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\chart packet\break even excersise 8.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\chart packet\busniess analysis exercise 14.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\chart packet\country stats excersisce 6.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\chart packet\enrollment excersise 7.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\chart packet\enrollment.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\chart packet\kitchen renovation project excersise 15.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\chart packet\modifed temperature bar graph.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\chart packet\modified temperature 2.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\chart packet\modified temperature.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\chart packet\pizza palace excersice 2.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\chart packet\population excersice 5.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\chart packet\population excersice.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\chart packet\TRAVEL modified.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\chart packet\TRAVEL.docx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\Balance Sheet.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\brochure costs.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\CAR SALES 1.xls
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\choral county.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\chp. 7 vocab.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\contienents.xls
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\DANCE.xls
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\dive log exercise 6.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\dive log.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\excersise 5 - Shortcut.lnk
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\excersise 5.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\Formula examples.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\Grades.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\income statement exercise 13.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\income statement.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\minsart.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\percentages.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\personal budget exersice 14.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\pizza palace.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\Spread sheet practice 4.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\Spread sheet practice 4and5.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\squeaky clean cars.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\stocks.xls
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\student stats.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\Swim meet.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\Temp Conversion.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\Tickets.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\excel\Track Progress.xlsx
+Access is denied.
+
+2019/05/18 03:29:52 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\keyboard\payroll\practice 6.xls
+Access is denied.
+
+2019/05/18 03:29:53 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\powerpoint project\~$neral Knowledge terms Categorize.doc
+Access is denied.
+
+2019/05/18 03:29:53 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\powerpoint project\General Knowledge terms Categorize.doc
+Access is denied.
+
+2019/05/18 03:29:53 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\powerpoint project\kyle mitchell power point.pptx
+Access is denied.
+
+2019/05/18 03:29:53 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\Certificates\Business Labs\p1studentshare\Period 6\Kyle Mitchell\semester 2 Final\Database Kyle Mitchell.accdb
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\GP1.jpeg
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\photo-1.JPG
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\2162850312.js
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\41UOilkx9oL.jpg
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\5670.js
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\a.js
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\acj
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\acj_002
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\acj_003
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\acj_004
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\acj_005
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\acj_006
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\acj_007
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\acj_008
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\acj_009
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\advertise-562a9b04eeadb29cd551e97b4f7c696a.png
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\analytics.js
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\application-59d5f73e9d24cdbc7324ec756bfa90d9.css
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\application-a99bcf24bc38de6e87be96105ae64dd0.js
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\application-defer-86812e7d65882b1329fc7527fb132ae1.js
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\application-foot-447941387467b4380054f20bb6df8d05.js
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\beacon.js
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\books-697393f5e02939eef3bf72a5338f426e.jpg
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\cae-essays-3b961db4ce53ba4210701d3e7a2ffeef.png
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\channel.htm
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\checkout.js
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\community-notes-e1157a3f11b1e37d7fd4396e6202e7cb.png
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\container.htm
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\cse.js
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\default.css
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\defaulten.css
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\defaulten.js
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\gpt.js
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\grad-essays-aece4879decb3d61084ea53e1260d116.png
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\head-a95a3bfecc48a7afcfe33f58c7a3af1f.svg
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\init
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\ios-235b2bacacaa5f012599a5b43587a0fd.png
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\jsapi
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\jstag
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\linkid.js
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\lit-essays-75c48f147c83900c87870ef45ce9c260.png
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\osd.js
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\pd.htm
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\pd_002.htm
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\pd_003.htm
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\pd_004.htm
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\pd_005.htm
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\pd_006.htm
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\pd_007.htm
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\pd_008.htm
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\pd_009.htm
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\print-8e961cf29d6691c1b4d8be6609a5c27c.css
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\pubads_impl_76.js
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\quant.js
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\yieldbot.js
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\pd_data\1.png
+Access is denied.
+
+2019/05/18 03:38:02 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\pd_data\cejeiejcfebegdhddhbfbhff.gif
+Access is denied.
+
+2019/05/18 03:38:03 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\pd_data\L21rdC8xL21jaHBpZC8x.gif
+Access is denied.
+
+2019/05/18 03:38:03 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\pd_data\ox.gif
+Access is denied.
+
+2019/05/18 03:38:03 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\pd_data\sync.gif
+Access is denied.
+
+2019/05/18 03:38:03 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\pd_data_007\7c12d18e-d193-e621-6d02-e8c166a1097a.gif
+Access is denied.
+
+2019/05/18 03:38:03 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\pd_data_007\cm.gif
+Access is denied.
+
+2019/05/18 03:38:03 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\pd_data_007\img.gif
+Access is denied.
+
+2019/05/18 03:38:03 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\pd_data_007\match.gif
+Access is denied.
+
+2019/05/18 03:38:03 ERROR 5 (0x00000005) Copying File \\Seaspray\DATA\user\tfarrell\documents\My Pictures\The Kite Runner Themes _ GradeSaver_files\pd_data_007\ping_match.gif
+Access is denied.
+
+
+------------------------------------------------------------------------------
+
+               Total    Copied   Skipped  Mismatch    FAILED    Extras
+    Dirs :     14472        11     14461         0         0       113
+   Files :    195953       191    195493         0       269       867
+   Bytes : 249.466 g  619.74 m 248.794 g         0   68.38 m  484.99 m
+   Times :   0:12:19   0:00:31                       0:00:00   0:11:47
+
+
+   Speed :            20494064 Bytes/sec.
+   Speed :            1172.679 MegaBytes/min.
+
+   Ended : Sat May 18 03:38:24 2019

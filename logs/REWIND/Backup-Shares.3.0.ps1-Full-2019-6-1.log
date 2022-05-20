@@ -1,0 +1,45 @@
+06/01/2019 01:00:03 [SCRIPT] REWIND | veritas | Backup-Shares.3.0.ps1 \\mirage\Scripts\Servers\Backup\jobs\High-Site-Servers.02.csv -Full True -Test False
+06/01/2019 01:00:03 [SCRIPT] REWIND | veritas | Backup-Shares.3.0.ps1 \\mirage\Scripts\Servers\Backup\jobs\Middle-Site-Servers.01.csv -Full True -Test False
+06/01/2019 01:00:03 [SCRIPT] REWIND | veritas | Backup-Shares.3.0.ps1 \\mirage\Scripts\Servers\Backup\jobs\Primary-Site-Servers.01.csv -Full True -Test False
+06/01/2019 01:00:03 [INFO] Src:\\ch-pounce\Data | Dst:\\10.189.19.123\Utility\Full\ch-pounce\Data | Options:/E /M
+06/01/2019 01:00:03 [INFO] Src:\\SEASPRAY\User | Dst:\\10.189.19.123\Utility\Full\SEASPRAY\User | Options:/E /M
+06/01/2019 01:00:03 [INFO] Src:\\PIONEER\data | Dst:\\10.189.19.123\Utility\Full\PIONEER\data | Options:/E /M
+06/01/2019 01:00:22 [INFO] Src:\\ch-pounce\Datas | Dst:\\10.189.19.123\Utility\Full\ch-pounce\Datas | Options:/E /M
+06/01/2019 01:00:24 [INFO] Src:\\ci-bobcat\Data | Dst:\\10.189.19.123\Utility\Full\ci-bobcat\Data | Options:/E /M
+06/01/2019 01:00:28 [INFO] Src:\\ci-bobcat\Datas | Dst:\\10.189.19.123\Utility\Full\ci-bobcat\Datas | Options:/E /M
+06/01/2019 01:02:18 [INFO] Src:\\ho-hook\Data | Dst:\\10.189.19.123\Utility\Full\ho-hook\Data | Options:/E /M
+06/01/2019 01:05:19 [INFO] Src:\\ho-hook\Datas | Dst:\\10.189.19.123\Utility\Full\ho-hook\Datas | Options:/E /M
+06/01/2019 01:07:26 [INFO] Src:\\PIONEER\datas | Dst:\\10.189.19.123\Utility\Full\PIONEER\datas | Options:/E /M
+06/01/2019 01:08:35 [INFO] Src:\\jm-wildrider\Data | Dst:\\10.189.19.123\Utility\Full\jm-wildrider\Data | Options:/E /M
+06/01/2019 01:14:17 [INFO] Src:\\PIONEER\user | Dst:\\10.189.19.123\Utility\Full\PIONEER\user | Options:/E /M
+06/01/2019 01:18:59 [INFO] Src:\\jm-wildrider\Datas | Dst:\\10.189.19.123\Utility\Full\jm-wildrider\Datas | Options:/E /M
+06/01/2019 01:25:03 [INFO] Src:\\ma-skyfire\Data | Dst:\\10.189.19.123\Utility\Full\ma-skyfire\Data | Options:/E /M
+06/01/2019 01:25:19 [INFO] Src:\\ma-skyfire\Datas | Dst:\\10.189.19.123\Utility\Full\ma-skyfire\Datas | Options:/E /M
+06/01/2019 01:25:35 [INFO] Src:\\nd-snapdragon\Data | Dst:\\10.189.19.123\Utility\Full\nd-snapdragon\Data | Options:/E /M
+06/01/2019 01:26:50 [INFO] Src:\\nd-snapdragon\Datas | Dst:\\10.189.19.123\Utility\Full\nd-snapdragon\Datas | Options:/E /M
+06/01/2019 01:29:21 [INFO] Src:\\lc-cheetah\Data | Dst:\\10.189.19.123\Utility\Full\lc-cheetah\Data | Options:/E /M
+06/01/2019 01:29:28 [INFO] Src:\\lc-cheetah\DataS | Dst:\\10.189.19.123\Utility\Full\lc-cheetah\DataS | Options:/E /M
+06/01/2019 01:34:09 [INFO] Src:\\parkview-as\Data | Dst:\\10.189.19.123\Utility\Full\parkview-as\Data | Options:/E /M
+06/01/2019 01:36:06 [INFO] Src:\\parkview-as\DataS | Dst:\\10.189.19.123\Utility\Full\parkview-as\DataS | Options:/E /M
+06/01/2019 01:40:05 [INFO] Src:\\ew-ramhorn\Data | Dst:\\10.189.19.123\Utility\Full\ew-ramhorn\Data | Options:/E /M
+06/01/2019 01:45:35 [INFO] Src:\\PUMA\data | Dst:\\10.189.19.123\Utility\Full\PUMA\data | Options:/E /M
+06/01/2019 01:47:27 [INFO] Src:\\ew-ramhorn\DataS | Dst:\\10.189.19.123\Utility\Full\ew-ramhorn\DataS | Options:/E /M
+06/01/2019 01:48:17 [INFO] Src:\\PUMA\datas | Dst:\\10.189.19.123\Utility\Full\PUMA\datas | Options:/E /M
+06/01/2019 01:48:31 [INFO] Src:\\ro-raccoon\Data | Dst:\\10.189.19.123\Utility\Full\ro-raccoon\Data | Options:/E /M
+06/01/2019 01:48:44 [INFO] Src:\\ro-raccoon\Datas | Dst:\\10.189.19.123\Utility\Full\ro-raccoon\Datas | Options:/E /M
+06/01/2019 01:48:46 [INFO] Src:\\PUMA\user | Dst:\\10.189.19.123\Utility\Full\PUMA\user | Options:/E /M
+06/01/2019 01:49:05 [INFO] Src:\\sh-searchlight\Data | Dst:\\10.189.19.123\Utility\Full\sh-searchlight\Data | Options:/E /M
+06/01/2019 01:50:15 [INFO] Src:\\sh-searchlight\Datas | Dst:\\10.189.19.123\Utility\Full\sh-searchlight\Datas | Options:/E /M
+06/01/2019 01:52:03 [INFO] Src:\\sv-sam\data | Dst:\\10.189.19.123\Utility\Full\sv-sam\data | Options:/E /M
+06/01/2019 01:55:13 [INFO] Src:\\sv-sam\datas | Dst:\\10.189.19.123\Utility\Full\sv-sam\datas | Options:/E /M
+06/01/2019 01:57:21 [INFO] No Powershell errors reported.
+06/01/2019 02:26:09 [INFO] Src:\\WALLY\data | Dst:\\10.189.19.123\Utility\Full\WALLY\data | Options:/E /M
+06/01/2019 02:27:16 [INFO] Src:\\WALLY\datas | Dst:\\10.189.19.123\Utility\Full\WALLY\datas | Options:/E /M
+06/01/2019 02:27:45 [INFO] Src:\\WALLY\user | Dst:\\10.189.19.123\Utility\Full\WALLY\user | Options:/E /M
+06/01/2019 02:52:36 [INFO] No Powershell errors reported.
+06/01/2019 03:13:37 [INFO] No Powershell errors reported.
+06/01/2019 17:00:03 [SCRIPT] REWIND | veritas | Backup-Shares.3.0.ps1 \\mirage\Scripts\Servers\Backup\jobs\Gears.csv -Full True -Test False
+06/01/2019 17:00:05 [INFO] Src:\\GEARS\User | Dst:\\10.189.19.123\Utility\Full\GEARS\User | Options:/E /M
+06/01/2019 18:26:12 [INFO] Src:\\GEARS\Datas | Dst:\\10.189.19.123\Utility\Full\GEARS\Datas | Options:/E /M
+06/01/2019 18:39:01 [INFO] Src:\\GEARS\Data | Dst:\\10.189.19.123\Utility\Full\GEARS\Data | Options:/E /M
+06/01/2019 18:46:15 [INFO] No Powershell errors reported.

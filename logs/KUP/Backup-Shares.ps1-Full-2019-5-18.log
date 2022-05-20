@@ -1,0 +1,5 @@
+05/18/2019 02:00:07 [SCRIPT] KUP | veritas | Backup-Shares.ps1 \\mirage\Scripts\Servers\Backup\jobs\All-Jobs-02.txt -Full True -Test False
+05/18/2019 02:00:07 [INFO] Src:\\Seaspray\UserS | Dst:\\KUP\Seaspray\Full\UserS | Options:/E /M
+05/18/2019 03:26:04 [INFO] Src:\\Seaspray\DATA | Dst:\\KUP\Seaspray\Full\DATA | Options:/E /M
+05/18/2019 03:38:24 [INFO] Src:\\Seaspray\DATAS | Dst:\\KUP\Seaspray\Full\DATAS | Options:/E /M
+05/18/2019 03:43:21 [INFO] No Powershell errors reported.
