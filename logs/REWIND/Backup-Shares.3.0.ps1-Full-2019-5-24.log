@@ -1,5 +1,0 @@
-05/24/2019 17:00:03 [SCRIPT] REWIND | veritas | Backup-Shares.3.0.ps1 \\mirage\Scripts\Servers\Backup\jobs\Gears.csv -Full True -Test False
-05/24/2019 17:00:05 [INFO] Src:\\GEARS\User | Dst:\\10.189.19.123\Utility\Full\GEARS\User | Options:/E /M
-05/24/2019 18:48:41 [INFO] Src:\\GEARS\Datas | Dst:\\10.189.19.123\Utility\Full\GEARS\Datas | Options:/E /M
-05/24/2019 19:12:04 [INFO] Src:\\GEARS\Data | Dst:\\10.189.19.123\Utility\Full\GEARS\Data | Options:/E /M
-05/24/2019 19:18:46 [INFO] No Powershell errors reported.

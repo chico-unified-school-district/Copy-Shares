@@ -1,8 +1,0 @@
-srcServer|srcShare|dstServer|dstShare|excludeDirs|excludeFiles
-CS-STREETWISE|Gears|KUP|Gears||
-CS-STREETWISE|Inspire-Staff|KUP|Inspire-Staff||
-CS-STREETWISE|Inspire-Student|KUP|Inspire-Student||
-CS-STREETWISE|Inspire-Media|KUP|Inspire-Media||
-CS-STREETWISE|SEASPRAY|KUP|SEASPRAY||
-SEASPRAY|FV-Datas|KUP|AltEd||
-SEASPRAY|FV-UserS|KUP|AltEd||

@@ -1,9 +1,0 @@
-srcPath|dstServer|dstShare|excludeDirs|excludeFiles
-E:\Data|KUP|Gears||
-E:\User|KUP|Gears|AutoBackup|
-E:\ELD|KUP|Gears||
-F:\Datas|KUP|Gears|Halo Combat Evolved|
-F:\Users|KUP|Gears|Halo Combat Evolved,Updater5|*Setup*.exe
-W:\Support|KUP|Gears||
-F:\IT1StudentShare|CSITECH|IT1BACKUP|scans|
-F:\Datas\Teachers\Bruggeman|CSITECH|IT1BACKUP||

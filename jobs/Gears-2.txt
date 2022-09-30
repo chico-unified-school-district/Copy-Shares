@@ -1,2 +1,0 @@
-srcServer|srcShare|dstServer|dstShare|excludeDirs|excludeFiles
-Gears|Users|KUP|Gears||*.mp4,*.avi,*.MTS,*.MPEG,*.MOV

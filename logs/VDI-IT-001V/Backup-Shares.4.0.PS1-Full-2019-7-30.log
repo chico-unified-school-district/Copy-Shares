@@ -1,3 +1,0 @@
-07/30/2019 09:15:44 [SCRIPT] VDI-IT-001V | cooperj | Backup-Shares.4.0.PS1 .\jobs\Primary-Site-Servers.01.csv -Full False -Test False
-07/30/2019 09:15:45 [INFO] Src:\\ch-pounce\Data | Dst:\\KUP\ElementaryShareBackups\ch-pounce\Data | Options:/E
-07/30/2019 09:15:45 [INFO] ROBOCOPY \\ch-pounce\Data \\KUP\ElementaryShareBackups\ch-pounce\Data /E /XD Temp Autobackup Updater5 /XF *.log *desktop.ini *.crdownload *.tmp *.mp4 *.avi *.mpeg *.mov thumbs.db /W:0 /R:0 /NFL /NDL /XA:S 
