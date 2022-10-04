@@ -9,17 +9,53 @@ param (
  [System.Management.Automation.PSCredential]$BackupCredential,
  [string]$JobFile,
  [switch]$Mirror,
+ [switch]$ShowProcess,
  [Alias('wi')]
  [switch]$WhatIf
 )
 
+function Add-SrcDstData {
+ process {
+  $src = '\\{0}\{1}' -f $_.srcServer, $_.srcShare
+  Add-Member -InputObject $_ -MemberType NoteProperty -Name src -Value $src
+  $dst = '\\{0}\{1}\{2}\{3}' -f $_.dstServer, $_.dstShare, $_.srcServer, $_.srcShare
+  Add-Member -InputObject $_ -MemberType NoteProperty -Name dst -Value $dst
+  $_
+ }
+}
+
+function Add-SrcDstParams ([System.Management.Automation.PSCredential]$cred) {
+ process {
+  $srcParams = @{type = 'Source'; name = 'X'; cred = $cred; root = $_.src }
+  Add-Member -InputObject $_ -MemberType NoteProperty -Name srcParams -Value $srcParams
+  $dstParams = @{type = 'Destination'; name = 'Y'; cred = $cred; root = $_.dst }
+  Add-Member -InputObject $_ -MemberType NoteProperty -Name dstParams -Value $dstParams
+  $_
+ }
+}
+
+function Add-ExcludedDirs {
+ process {
+  $excludedDirs = @('Temp', 'Autobackup', 'Updater5',
+   '$RECYCLE.BIN', 'AppData', 'iTunes', 'DropBox', 'Application Data')
+  if ($_.excludeDirs) {
+   $customDirs = $_.excludeDirs -split ','
+   $_.excludeDirs = $customDirs + $excludedDirs | Sort-Object -Unique
+  }
+  else {
+   $_.excludeDirs = $excludedDirs
+  }
+  $_
+ }
+}
+
 function Add-ExcludedFiles {
  process {
   $excludedFileTypes = @('*.log', '*desktop.ini', '*.crdownload', '*.tmp',
-   '*.mp4', '*.avi', '*.mpeg', '*.mov', 'thumbs.db', '*.pst', '*.ost')
+   '*.mp4', '*.avi', '*.mpeg', '*.mov', 'thumbs.db', '*.pst', '*.ost', '*Aeries*.url', '~*')
   if ($_.excludeFiles) {
    $customFileTypes = $_.excludeFiles -split ','
-   $_.excludeFiles = $customFileTypes + $excludedFileTypes
+   $_.excludeFiles = $customFileTypes + $excludedFileTypes | Sort-Object -Unique
   }
   else {
    $_.excludeFiles = $excludedFileTypes
@@ -30,25 +66,31 @@ function Add-ExcludedFiles {
 
 function Backup-Share {
  process {
-  $src = '\\{0}\{1}' -f $_.srcServer, $_.srcShare
-  $dst = '\\{0}\{1}\{2}\{3}' -f $_.dstServer, $_.dstShare, $_.srcServer, $_.srcShare
-
-  Write-Host ('{0},[{1}],[{2}]' -f $MyInvocation.MyCommand.Name, $src, $dst) -Fore Magenta
+  Write-Host ('{0},[{1}],[{2}]' -f $MyInvocation.MyCommand.Name, $_.src, $_.dst) -Fore Magenta
   Write-Debug 'Process?'
-  $srcParams = @{type = 'Source'; name = 'X'; cred = $BackupCredential; root = $src }
-  $dstParams = @{type = 'Destination'; name = 'Y'; cred = $BackupCredential; root = $dst }
+
   'X', 'Y' | Disconnect-PSShare
-  $srcParams, $dstParams | Connect-PSShare
-  if (-not(Get-PSdrive -Name X,Y -ErrorAction SilentlyContinue)){
-   Write-Warning ('{0},Src or Dst not found. Skipping. [{1}],[{2}]' -f $MyInvocation.MyCommand.Name, $src, $dst)
+  $_.srcParams, $_.dstParams | Connect-PSShare
+
+  if (-not(Get-PSdrive -Name X, Y -ErrorAction SilentlyContinue)) {
+   # Ensure drives are mapped correctly
+   Write-Warning ('{0},Src or Dst not found. Skipping. [{1}],[{2}]' -f $MyInvocation.MyCommand.Name, $_.src, $_.dst)
    'X', 'Y' | Disconnect-PSShare
    return
   }
-  $options = if ($Mirror) { @('/MIR') } else { @('/E', '/M') }
-  if ($WhatIf) { $testSwitch = '/L' }
+
+  $copyType = if ($Mirror) { @('/MIR') } else { @('/E', '/M') }
+
+  if ($ShowProcess) { $behavior = '/W:0', '/R:0', '/XA:S' }
+  else { $behavior = '/W:0', '/R:0', '/NFL', '/NDL', '/XA:S' }
+
+  $testSwitch = if ($WhatIf) { '/L' } else { '/MT:32' }
+
   Write-Host ('{0},Copying [{1}] to [{2}]' -f $MyInvocation.MyCommand.Name, $src, $dst) -Fore Green
-  # "ROBOCOPY X:\ Y:\  $options /W:0 /R:0 /NFL /NDL /XF $excludedFileTypes /XA:S $testSwitch"
-  ROBOCOPY X:\ Y:\ $options /W:0 /R:0 /NFL /NDL /XF $excludedFileTypes /XA:S $testSwitch
+  $roboVars = ($_.excludeFiles -join ','), ($_.excludeDirs -join ','), $testSwitch
+  "ROBOCOPY X:\ Y:\ $copyType $behavior /XF {0} /XD {1} /XA:S {2}" -f $roboVars
+  ROBOCOPY X:\ Y:\ $copyType $behavior /XF $_.excludeFiles /XD $_.excludeDirs $testSwitch
+
   'X', 'Y' | Disconnect-PSShare
  }
 }
@@ -59,11 +101,11 @@ function Connect-PSShare {
   Write-Host ('{0},[{1}],[{2}],[{3}],[{4}]' -f $msgVars) -Fore Blue
   if (-not(Get-PSDrive -Name $_ -ErrorAction SilentlyContinue)) {
    $newDrive = @{
-    Name        = $_.nameK
+    Name        = $_.name
     Root        = $_.root
     PSProvider  = 'FileSystem'
     Persist     = $True
-    Scope = 'Global'
+    Scope       = 'Global'
     ErrorAction = 'SilentlyContinue'
     Credential  = $_.cred
    }
@@ -84,7 +126,7 @@ function Disconnect-PSShare {
    Remove-PSDrive -Name $_ -Confirm:$false -Force -ErrorAction SilentlyContinue
   }
   if (Get-PSDrive -Name $_ -ErrorAction SilentlyContinue) {
-   $driveLetter = $_+':'
+   $driveLetter = $_ + ':'
    $deleteDrive = 'NET USE {0} /DELETE' -f $driveLetter
    Write-Host ('Trying: {0}' -f $deleteDrive) -Fore Red
    echo 'Y' | net use $driveLetter /delete
@@ -98,4 +140,5 @@ function Get-BackupJobs {
  }
 }
 
-$JobFile | Get-BackupJobs | Add-ExcludedFiles | Backup-Share -shareCred $BackupCredential
+$JobFile | Get-BackupJobs | Add-ExcludedFiles | Add-ExcludedDirs |
+Add-SrcDstData | Add-SrcDstParams -cred $BackupCredential | Backup-Share
