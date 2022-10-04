@@ -1,4 +1,0 @@
-srcServer|srcShare|dstServer|dstShare|excludeDirs|excludeFiles
-Seaspray|UserS|KUP|Seaspray||*.mp4,*.avi,*.MTS,*.MPEG,*.MOV
-Seaspray|DATA|KUP|Seaspray||*.mp4,*.avi,*.MTS,*.MPEG,*.MOV
-Seaspray|DATAS|KUP|Seaspray||*.mp4,*.avi,*.MTS,*.MPEG,*.MOV
