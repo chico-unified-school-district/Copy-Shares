@@ -1,3 +1,4 @@
 /notes.ps1
 /jenkins-pipeline.gvy
 *.csv
+/logs

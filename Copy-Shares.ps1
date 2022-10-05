@@ -14,6 +14,23 @@ param (
  [switch]$WhatIf
 )
 
+function Add-Behavior {
+ process {
+  if ($ShowProcess) { $behavior = '/W:0', '/R:0', '/XA:S' }
+  else { $behavior = '/W:0', '/R:0', '/NFL', '/NDL', '/XA:S' }
+  Add-Member -InputObject $_ -MemberType NoteProperty -Name behavior -Value $behavior
+  $_
+ }
+}
+
+function Add-CopyType {
+ process {
+  $copyType = if ($Mirror) { @('/MIR') } else { @('/E', '/M') }
+  Add-Member -InputObject $_ -MemberType NoteProperty -Name copyType -Value $copyType
+  $_
+ }
+}
+
 function Add-SrcDstData {
  process {
   $src = '\\{0}\{1}' -f $_.srcServer, $_.srcShare
@@ -64,6 +81,14 @@ function Add-ExcludedFiles {
  }
 }
 
+function Add-TestSwitch {
+ process {
+  $testSwitch = if ($WhatIf) { '/L' } else { '/MT:32' }
+  Add-Member -InputObject $_ -MemberType NoteProperty -Name testSwitch -Value $testSwitch
+  $_
+ }
+}
+
 function Backup-Share {
  process {
   Write-Host ('{0},[{1}],[{2}]' -f $MyInvocation.MyCommand.Name, $_.src, $_.dst) -Fore Magenta
@@ -79,17 +104,8 @@ function Backup-Share {
    return
   }
 
-  $copyType = if ($Mirror) { @('/MIR') } else { @('/E', '/M') }
-
-  if ($ShowProcess) { $behavior = '/W:0', '/R:0', '/XA:S' }
-  else { $behavior = '/W:0', '/R:0', '/NFL', '/NDL', '/XA:S' }
-
-  $testSwitch = if ($WhatIf) { '/L' } else { '/MT:32' }
-
-  Write-Host ('{0},Copying [{1}] to [{2}]' -f $MyInvocation.MyCommand.Name, $src, $dst) -Fore Green
-  $roboVars = ($_.excludeFiles -join ','), ($_.excludeDirs -join ','), $testSwitch
-  "ROBOCOPY X:\ Y:\ $copyType $behavior /XF {0} /XD {1} /XA:S {2}" -f $roboVars
-  ROBOCOPY X:\ Y:\ $copyType $behavior /XF $_.excludeFiles /XD $_.excludeDirs $testSwitch
+  Write-Host ('{0},Copying [{1}] to [{2}]' -f $MyInvocation.MyCommand.Name, $_.src, $_.dst) -Fore Green
+  ROBOCOPY X:\ Y:\ $_.copyType $_.behavior /XF $_.excludeFiles /XD $_.excludeDirs $_.testSwitch
 
   'X', 'Y' | Disconnect-PSShare
  }
@@ -141,4 +157,5 @@ function Get-BackupJobs {
 }
 
 $JobFile | Get-BackupJobs | Add-ExcludedFiles | Add-ExcludedDirs |
-Add-SrcDstData | Add-SrcDstParams -cred $BackupCredential | Backup-Share
+Add-SrcDstData | Add-SrcDstParams -cred $BackupCredential | Add-CopyType |
+Add-Behavior | Add-TestSwitch | Backup-Share
