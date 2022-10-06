@@ -1,7 +1,5 @@
-# Use Run as Administrator in Powershell, cmd.exe, or as a Scheduled Task.
-# Use -Mirror switch to purge extra files from destination
-# Backup Job file header: srcServer|srcShare|dstServer|dstShare|excludeDirs|excludeFiles
-
+# Powershell ,Robocopy, and New-PSDrive work in concert to achieve file copy nirvana.
+# You can do ANYTHING if you've visited ZOMBO.COM
 [CmdletBinding()]
 param (
  [Alias('cred')]
@@ -31,22 +29,46 @@ function Add-CopyType {
  }
 }
 
-function Add-SrcDstData {
+function Add-LogPath {
+ process {
+  $logRoot = '.\logs\' + $_.srcServer
+  if (-not(Test-Path -Path $logRoot)) {
+   New-Item -Path $logRoot -ItemType Directory -Confirm:$false | Out-Null
+  }
+  $logPath = '/LOG:.\logs\{0}\{0}-{1}-{2}.log' -f $_.srcServer, $_.srcShare, (Get-Date -f yyyy-MM-dd)
+  Add-Member -InputObject $_ -MemberType NoteProperty -Name logPath -Value $logPath
+  $_
+ }
+}
+
+function Add-SrcDstPaths {
  process {
   $src = '\\{0}\{1}' -f $_.srcServer, $_.srcShare
   Add-Member -InputObject $_ -MemberType NoteProperty -Name src -Value $src
-  $dst = '\\{0}\{1}\{2}\{3}' -f $_.dstServer, $_.dstShare, $_.srcServer, $_.srcShare
+  $dst = '\\{0}\{1}' -f $_.dstServer, $_.dstShare
   Add-Member -InputObject $_ -MemberType NoteProperty -Name dst -Value $dst
   $_
  }
 }
 
-function Add-SrcDstParams ([System.Management.Automation.PSCredential]$cred) {
+function Add-SrcDstParams {
  process {
-  $srcParams = @{type = 'Source'; name = 'X'; cred = $cred; root = $_.src }
+  $srcParams = @{type = 'Source'; name = 'X'; cred = $BackupCredential; root = $_.src }
+  Write-Verbose ( $srcParams | Out-String )
   Add-Member -InputObject $_ -MemberType NoteProperty -Name srcParams -Value $srcParams
-  $dstParams = @{type = 'Destination'; name = 'Y'; cred = $cred; root = $_.dst }
+
+  $srcCopyPath = '{0}:\' -f $srcParams.name
+  Write-Verbose ( $srcCopyPath | Out-String )
+  Add-Member -InputObject $_ -MemberType NoteProperty -Name srcCopyPath -Value $srcCopyPath
+
+  $dstParams = @{type = 'Destination'; name = 'Y'; cred = $BackupCredential; root = $_.dst }
+  Write-Verbose ( $dstParams | Out-String )
   Add-Member -InputObject $_ -MemberType NoteProperty -Name dstParams -Value $dstParams
+
+  $dstCopyPath = '{0}:\{1}\{2}' -f $dstParams.name, $_.srcServer, $_.srcShare
+  Write-Verbose ( $dstCopyPath | Out-String )
+  Add-Member -InputObject $_ -MemberType NoteProperty -Name dstCopyPath -Value $dstCopyPath
+
   $_
  }
 }
@@ -92,22 +114,22 @@ function Add-TestSwitch {
 function Backup-Share {
  process {
   Write-Host ('{0},[{1}],[{2}]' -f $MyInvocation.MyCommand.Name, $_.src, $_.dst) -Fore Magenta
+  Write-Verbose ( $_ | Out-String )
   Write-Debug 'Process?'
 
-  'X', 'Y' | Disconnect-PSShare
+  $_.srcParams.name, $_.dstParams.name | Disconnect-PSShare
   $_.srcParams, $_.dstParams | Connect-PSShare
 
   if (-not(Get-PSdrive -Name X, Y -ErrorAction SilentlyContinue)) {
    # Ensure drives are mapped correctly
    Write-Warning ('{0},Src or Dst not found. Skipping. [{1}],[{2}]' -f $MyInvocation.MyCommand.Name, $_.src, $_.dst)
-   'X', 'Y' | Disconnect-PSShare
-   return
+   $_.srcParams.name, $_.dstParams.name | Disconnect-PSShare
+   continue
   }
-
   Write-Host ('{0},Copying [{1}] to [{2}]' -f $MyInvocation.MyCommand.Name, $_.src, $_.dst) -Fore Green
-  ROBOCOPY X:\ Y:\ $_.copyType $_.behavior /XF $_.excludeFiles /XD $_.excludeDirs $_.testSwitch
+  ROBOCOPY $_.srcCopyPath $_.dstCopyPath $_.copyType $_.behavior /XF $_.excludeFiles /XD $_.excludeDirs $_.testSwitch $_.logPath
 
-  'X', 'Y' | Disconnect-PSShare
+  $_.srcParams.name, $_.dstParams.name | Disconnect-PSShare
  }
 }
 
@@ -126,7 +148,6 @@ function Connect-PSShare {
     Credential  = $_.cred
    }
    New-PSDrive @newDrive | Out-Null
-   # Get-PSDRive
   }
   else {
    Write-Error ('{0},PSDrive Exists. {1}. Please check environment. EXITING.' -f $MyInvocation.MyCommand.Name, $_.name)
@@ -156,6 +177,19 @@ function Get-BackupJobs {
  }
 }
 
+function Remove-ExpiredLogs {
+ # https://www.thomasmaurer.ch/2010/12/powershell-delete-files-older-than/
+ $logPath = '.\logs'
+ $daysBack = -14
+ $currentDate = Get-Date
+ $dateToDelete = $CurrentDate.AddDays($daysback)
+ Write-Host ('{0},Older than {1} days' -f $MyInvocation.MyCommand.Name, ($daysBack.ToString().replace('-', '')))
+ Get-ChildItem -Path $logPath -Recurse |
+ Where-Object { $_.LastWriteTime -lt $dateToDelete } | Remove-Item
+}
+
+Remove-ExpiredLogs
+
 $JobFile | Get-BackupJobs | Add-ExcludedFiles | Add-ExcludedDirs |
-Add-SrcDstData | Add-SrcDstParams -cred $BackupCredential | Add-CopyType |
-Add-Behavior | Add-TestSwitch | Backup-Share
+Add-SrcDstPaths | Add-SrcDstParams | Add-CopyType | Add-Behavior |
+Add-TestSwitch | Backup-Share
