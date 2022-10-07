@@ -196,6 +196,10 @@ function Remove-ExpiredLogs {
  Where-Object { $_.LastWriteTime -lt $dateToDelete } | Remove-Item
 }
 
+. .\Lib\Add-Module.ps1
+
+'PSSQLite' | Add-Module
+
 Remove-ExpiredLogs
 
 $JobFile | Get-BackupJobs | Add-ExcludedFiles | Add-ExcludedDirs |
