@@ -3,3 +3,6 @@
 *.csv
 /logs
 /jobs/*.csv
+/jobs/Gears.csv
+/jobs/Seaspray.csv
+/jobs/Sprige.csv
