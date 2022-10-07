@@ -53,6 +53,10 @@ function Add-SrcDstPaths {
 
 function Add-SrcDstParams {
  process {
+  # Source Area
+  $src = '\\{0}\{1}' -f $_.srcServer, $_.srcShare
+  Add-Member -InputObject $_ -MemberType NoteProperty -Name src -Value $src
+
   $srcParams = @{type = 'Source'; name = 'X'; cred = $BackupCredential; root = $_.src }
   Write-Verbose ( $srcParams | Out-String )
   Add-Member -InputObject $_ -MemberType NoteProperty -Name srcParams -Value $srcParams
@@ -60,6 +64,10 @@ function Add-SrcDstParams {
   $srcCopyPath = '{0}:\' -f $srcParams.name
   Write-Verbose ( $srcCopyPath | Out-String )
   Add-Member -InputObject $_ -MemberType NoteProperty -Name srcCopyPath -Value $srcCopyPath
+
+  # Destination Area
+  $dst = '\\{0}\{1}' -f $_.dstServer, $_.dstShare
+  Add-Member -InputObject $_ -MemberType NoteProperty -Name dst -Value $dst
 
   $dstParams = @{type = 'Destination'; name = 'Y'; cred = $BackupCredential; root = $_.dst }
   Write-Verbose ( $dstParams | Out-String )
@@ -191,5 +199,4 @@ function Remove-ExpiredLogs {
 Remove-ExpiredLogs
 
 $JobFile | Get-BackupJobs | Add-ExcludedFiles | Add-ExcludedDirs |
-Add-SrcDstPaths | Add-SrcDstParams | Add-CopyType | Add-Behavior |
-Add-TestSwitch | Backup-Share
+| Add-SrcDstParams | Add-CopyType | Add-Behavior | Add-TestSwitch | Backup-Share
