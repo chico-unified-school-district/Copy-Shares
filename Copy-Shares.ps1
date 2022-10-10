@@ -5,7 +5,8 @@ param (
  [Alias('cred')]
  [Parameter(Mandatory = $True)]
  [System.Management.Automation.PSCredential]$BackupCredential,
- [string]$JobFile,
+ [string]$SQLiteDatabaseFile,
+ [string[]]$SourceServers,
  [switch]$Mirror,
  [switch]$ShowProcess,
  [Alias('wi')]
@@ -181,10 +182,8 @@ function Disconnect-PSShare {
 
 function Get-BackupJobs ($sqliteDB, [string[]]$servers) {
  'PSSQLite' | Add-Module
- # Import-Csv -Path $_ -Delimiter '|'
- foreach ($serv in $servers) {
-  $serversIN += "`'$serv`',"
- }
+ # format server list for sql
+ foreach ($serv in $servers) { $serversIN += "`'$serv`'," }
  $sql = 'SELECT * FROM jobs WHERE srcServer COLLATE NOCASE IN ({0})' -f $serversIN.TrimEnd(',')
  Invoke-SqliteQuery -DataSource $sqliteDB -Query $sql
 }
@@ -201,11 +200,11 @@ function Remove-ExpiredLogs {
 }
 
 # ====================================================================================
-. .\Lib\Add-Module.ps1
+. .\lib\Add-Module.ps1
 
 Remove-ExpiredLogs
 
-$jobs = Get-BackupJobs -DataSource $SQLiteBD -servers $Servers
+$jobs = Get-BackupJobs -DataSource $SQLiteDatabaseFile -servers $SourceServers
 
 $jobs | Add-ExcludedFiles | Add-ExcludedDirs |
 Add-SrcDstParams | Add-CopyType | Add-Behavior | Add-TestSwitch | Backup-Share
