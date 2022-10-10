@@ -9,6 +9,7 @@ param (
  [string[]]$SourceServers,
  [switch]$Mirror,
  [switch]$ShowProcess,
+ [switch]$ListJobs,
  [Alias('wi')]
  [switch]$WhatIf
 )
@@ -184,7 +185,7 @@ function Get-BackupJobs ($sqliteDB, [string[]]$servers) {
  'PSSQLite' | Add-Module
  # format server list for sql
  foreach ($serv in $servers) { $serversIN += "`'$serv`'," }
- $sql = 'SELECT * FROM jobs WHERE srcServer COLLATE NOCASE IN ({0})' -f $serversIN.TrimEnd(',')
+ $sql = 'SELECT * FROM jobs WHERE srcServer COLLATE NOCASE IN ({0}) ORDER BY srcServer,srcShare' -f $serversIN.TrimEnd(',')
  Invoke-SqliteQuery -DataSource $sqliteDB -Query $sql
 }
 
@@ -199,12 +200,19 @@ function Remove-ExpiredLogs {
  Where-Object { $_.LastWriteTime -lt $dateToDelete } | Remove-Item
 }
 
+filter Select-Jobs {
+ if ($_.executeJob -eq 'TRUE') { $_ }
+}
+
 # ====================================================================================
 . .\lib\Add-Module.ps1
 
-Remove-ExpiredLogs
 
-$jobs = Get-BackupJobs -DataSource $SQLiteDatabaseFile -servers $SourceServers
+$jobs = Get-BackupJobs -sqliteDB $SQLiteDatabaseFile -servers $SourceServers
+
+if ($ListJobs) { $jobs | Format-Table ; EXIT }
+
+Remove-ExpiredLogs
 
 $jobs | Add-ExcludedFiles | Add-ExcludedDirs |
 Add-SrcDstParams | Add-CopyType | Add-Behavior | Add-TestSwitch | Backup-Share
