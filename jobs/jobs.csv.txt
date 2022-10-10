@@ -1,2 +1,0 @@
-srcServer|srcShare|dstServer|dstShare|excludeDirs|excludeFiles
-MyFileServer|MyShare|MyBackupServer|MyBackupShare|Bad Folder1,Bad Folder2|BadFile1,BadFile2,*.BadFileType

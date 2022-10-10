@@ -3,6 +3,5 @@
 *.csv
 /logs
 /jobs/*.csv
-/jobs/Gears.csv
-/jobs/Seaspray.csv
-/jobs/Sprige.csv
+/sqlite/jobs.sqbpro
+/sqlite/cusd-jobs.db

@@ -9,7 +9,8 @@ param (
  [string[]]$SourceServers,
  [switch]$Mirror,
  [switch]$ShowProcess,
- [switch]$ListJobs,
+ [switch]$ListJobData,
+ [switch]$ListJobObjects,
  [Alias('wi')]
  [switch]$WhatIf
 )
@@ -136,6 +137,7 @@ function Backup-Share {
    $_.srcParams.name, $_.dstParams.name | Disconnect-PSShare
    continue
   }
+  $_ | New-DstDirectory
   Write-Host ('{0},Copying [{1}] to [{2}]' -f $MyInvocation.MyCommand.Name, $_.src, $_.dst) -Fore Green
   ROBOCOPY $_.srcCopyPath $_.dstCopyPath $_.copyType $_.behavior /XF $_.excludeFiles /XD $_.excludeDirs $_.testSwitch $_.logPath
 
@@ -189,6 +191,15 @@ function Get-BackupJobs ($sqliteDB, [string[]]$servers) {
  Invoke-SqliteQuery -DataSource $sqliteDB -Query $sql
 }
 
+function New-DstDirectory {
+ process {
+  if (-not(Test-Path -Path $_.dstCopyPath)) {
+   Write-Host ('{0},{1}' -f $MyInvocation.MyCommand.Name, $_.dstCopyPath)
+   New-Item -Path $_.dstCopyPath -ItemType Directory -Confirm:$false
+  }
+ }
+}
+
 function Remove-ExpiredLogs {
  # https://www.thomasmaurer.ch/2010/12/powershell-delete-files-older-than/
  $logPath = '.\logs'
@@ -207,12 +218,15 @@ filter Select-Jobs {
 # ====================================================================================
 . .\lib\Add-Module.ps1
 
+$jobData = Get-BackupJobs -sqliteDB $SQLiteDatabaseFile -servers $SourceServers | Select-Jobs
 
-$jobs = Get-BackupJobs -sqliteDB $SQLiteDatabaseFile -servers $SourceServers
-
-if ($ListJobs) { $jobs | Format-Table ; EXIT }
+if ($ListJobData) { $jobData | Format-Table ; EXIT }
 
 Remove-ExpiredLogs
 
-$jobs | Add-ExcludedFiles | Add-ExcludedDirs |
-Add-SrcDstParams | Add-CopyType | Add-Behavior | Add-TestSwitch | Backup-Share
+$jobObjects = $jobData | Add-ExcludedFiles | Add-ExcludedDirs |
+Add-SrcDstParams | Add-CopyType | Add-Behavior | Add-TestSwitch
+
+if ($ListJobObjects) { $jobObjects ; EXIT }
+
+$jobObjects | Backup-Share
