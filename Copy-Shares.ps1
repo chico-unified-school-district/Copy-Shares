@@ -179,10 +179,14 @@ function Disconnect-PSShare {
  }
 }
 
-function Get-BackupJobs {
- process {
-  Import-Csv -Path $_ -Delimiter '|'
+function Get-BackupJobs ($sqliteDB, [string[]]$servers) {
+ 'PSSQLite' | Add-Module
+ # Import-Csv -Path $_ -Delimiter '|'
+ foreach ($serv in $servers) {
+  $serversIN += "`'$serv`',"
  }
+ $sql = 'SELECT * FROM jobs WHERE srcServer COLLATE NOCASE IN ({0})' -f $serversIN.TrimEnd(',')
+ Invoke-SqliteQuery -DataSource $sqliteDB -Query $sql
 }
 
 function Remove-ExpiredLogs {
@@ -196,11 +200,12 @@ function Remove-ExpiredLogs {
  Where-Object { $_.LastWriteTime -lt $dateToDelete } | Remove-Item
 }
 
+# ====================================================================================
 . .\Lib\Add-Module.ps1
-
-'PSSQLite' | Add-Module
 
 Remove-ExpiredLogs
 
-$JobFile | Get-BackupJobs | Add-ExcludedFiles | Add-ExcludedDirs |
-| Add-SrcDstParams | Add-CopyType | Add-Behavior | Add-TestSwitch | Backup-Share
+$jobs = Get-BackupJobs -DataSource $SQLiteBD -servers $Servers
+
+$jobs | Add-ExcludedFiles | Add-ExcludedDirs |
+Add-SrcDstParams | Add-CopyType | Add-Behavior | Add-TestSwitch | Backup-Share
