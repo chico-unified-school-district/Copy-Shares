@@ -4,6 +4,7 @@
 param (
  [Alias('cred')]
  [Parameter(Mandatory = $True)]
+ [Parameter(Mandatory = $True)]
  [System.Management.Automation.PSCredential]$BackupCredential,
  [string]$SQLiteDatabaseFile,
  [string[]]$SourceServers,
