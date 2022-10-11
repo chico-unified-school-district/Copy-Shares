@@ -231,7 +231,7 @@ $jobData = Get-BackupJobs -sqliteDB $SQLiteDatabaseFile -servers $SourceServers 
 
 if ($ListJobData) { $jobData | Format-Table }
 
-Remove-ExpiredLogs
+# Remove-ExpiredLogs
 
 $jobObjects = $jobData | Add-ExcludedFiles | Add-ExcludedDirs |
 Add-SrcDstParams | Add-CopyType | Add-Behavior | Add-TestSwitch
