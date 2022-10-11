@@ -19,6 +19,8 @@ param (
  [switch]$ShowProcess,
  [switch]$ListJobData,
  [switch]$ListJobObjects,
+ [Alias('Log')]
+ [switch]$EnableLogging,
  [Alias('wi')]
  [switch]$WhatIf
 )
@@ -209,10 +211,10 @@ function New-DstDirectory {
  }
 }
 
-function Remove-ExpiredLogs {
+function Remove-ExpiredLogs ([int]$daysBack) {
  # https://www.thomasmaurer.ch/2010/12/powershell-delete-files-older-than/
+ # $daysBack = -14
  $logPath = '.\logs'
- $daysBack = -14
  $currentDate = Get-Date
  $dateToDelete = $CurrentDate.AddDays($daysback)
  Write-Host ('{0},Older than {1} days' -f $MyInvocation.MyCommand.Name, ($daysBack.ToString().replace('-', '')))
@@ -231,11 +233,15 @@ $jobData = Get-BackupJobs -sqliteDB $SQLiteDatabaseFile -servers $SourceServers 
 
 if ($ListJobData) { $jobData | Format-Table }
 
-# Remove-ExpiredLogs
-
 $jobObjects = $jobData | Add-ExcludedFiles | Add-ExcludedDirs |
 Add-SrcDstParams | Add-CopyType | Add-Behavior | Add-TestSwitch
 
 if ($ListJobObjects) { $jobObjects }
 
-$jobObjects | Backup-Share
+if ($EnableLogging) {
+ Remove-ExpiredLogs -daysBack -14
+ $jobObjects | Add-LogPath | Backup-Share
+}
+else {
+ $jobObjects | Backup-Share
+}

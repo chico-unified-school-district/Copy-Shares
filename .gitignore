@@ -1,7 +1,7 @@
 /notes.ps1
 /jenkins-pipeline.gvy
 *.csv
-/logs
+*.logs
 /jobs/*.csv
 /sqlite/jobs.sqbpro
 /sqlite/cusd-jobs.db
