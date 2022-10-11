@@ -9,6 +9,12 @@ param (
  [string]$SQLiteDatabaseFile,
  [Parameter(Mandatory = $True)]
  [string[]]$SourceServers,
+ [Parameter(Mandatory = $True)]
+ # If running this script in parallel on the same system+account use unique driveletters
+ [string]$SourceDriveLetter,
+ [Parameter(Mandatory = $True)]
+ # If running this script in parallel on the same system+account use unique driveletters
+ [string]$DestDriveLetter,
  [switch]$Mirror,
  [switch]$ShowProcess,
  [switch]$ListJobData,
@@ -62,7 +68,7 @@ function Add-SrcDstParams {
   $src = '\\{0}\{1}' -f $_.srcServer, $_.srcShare
   Add-Member -InputObject $_ -MemberType NoteProperty -Name src -Value $src
 
-  $srcParams = @{type = 'Source'; name = 'X'; cred = $BackupCredential; root = $_.src }
+  $srcParams = @{type = 'Source'; name = $SourceDriveLetter; cred = $BackupCredential; root = $_.src }
   Write-Verbose ( $srcParams | Out-String )
   Add-Member -InputObject $_ -MemberType NoteProperty -Name srcParams -Value $srcParams
 
@@ -74,7 +80,7 @@ function Add-SrcDstParams {
   $dst = '\\{0}\{1}' -f $_.dstServer, $_.dstShare
   Add-Member -InputObject $_ -MemberType NoteProperty -Name dst -Value $dst
 
-  $dstParams = @{type = 'Destination'; name = 'Y'; cred = $BackupCredential; root = $_.dst }
+  $dstParams = @{type = 'Destination'; name = $DestDriveLetter; cred = $BackupCredential; root = $_.dst }
   Write-Verbose ( $dstParams | Out-String )
   Add-Member -InputObject $_ -MemberType NoteProperty -Name dstParams -Value $dstParams
 
@@ -89,7 +95,8 @@ function Add-SrcDstParams {
 function Add-ExcludedDirs {
  process {
   $excludedDirs = @('Temp', 'Autobackup', 'Updater5',
-   '$RECYCLE.BIN', 'AppData', 'iTunes', 'DropBox', 'Application Data')
+   '$RECYCLE.BIN', 'AppData', 'iTunes', 'DropBox',
+   'Favorites', 'Application Data')
   if ($_.excludeDirs) {
    $customDirs = $_.excludeDirs -split ','
    $_.excludeDirs = $customDirs + $excludedDirs | Sort-Object -Unique
@@ -222,13 +229,13 @@ filter Select-Jobs {
 
 $jobData = Get-BackupJobs -sqliteDB $SQLiteDatabaseFile -servers $SourceServers | Select-Jobs
 
-if ($ListJobData) { $jobData | Format-Table ; EXIT }
+if ($ListJobData) { $jobData | Format-Table }
 
 Remove-ExpiredLogs
 
 $jobObjects = $jobData | Add-ExcludedFiles | Add-ExcludedDirs |
 Add-SrcDstParams | Add-CopyType | Add-Behavior | Add-TestSwitch
 
-if ($ListJobObjects) { $jobObjects ; EXIT }
+if ($ListJobObjects) { $jobObjects }
 
 $jobObjects | Backup-Share
