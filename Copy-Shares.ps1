@@ -142,11 +142,12 @@ function Backup-Share {
   $_.srcParams.name, $_.dstParams.name | Disconnect-PSShare
   $_.srcParams, $_.dstParams | Connect-PSShare
 
-  if (-not(Get-PSdrive -Name X, Y -ErrorAction SilentlyContinue)) {
+  # if (-not(Get-PSdrive -Name $SourceDriveLetter, $DestDriveLetter -ErrorAction SilentlyContinue)) {
+  if (-not(Get-PSdrive -Name $SourceDriveLetter, $DestDriveLetter)) {
    # Ensure drives are mapped correctly
    Write-Warning ('{0},Src or Dst not found. Skipping. [{1}],[{2}]' -f $MyInvocation.MyCommand.Name, $_.src, $_.dst)
    $_.srcParams.name, $_.dstParams.name | Disconnect-PSShare
-   continue
+   return
   }
   $_ | New-DstDirectory
   Write-Host ('{0},Copying [{1}] to [{2}]' -f $MyInvocation.MyCommand.Name, $_.src, $_.dst) -Fore Green
