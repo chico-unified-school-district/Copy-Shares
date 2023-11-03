@@ -228,7 +228,11 @@ filter Select-Jobs {
 
 # ====================================================================================
 Clear-Host
+
 . .\lib\Add-Module.ps1
+. .\lib\Show-TestRun.ps1
+
+Show-TestRun
 
 $jobData = Get-BackupJobs -sqliteDB $SQLiteDatabaseFile -servers $SourceServers | Select-Jobs
 
@@ -246,3 +250,5 @@ if ($EnableLogging) {
 else {
  $jobObjects | Backup-Share
 }
+
+Show-TestRun
