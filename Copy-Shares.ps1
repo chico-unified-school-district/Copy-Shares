@@ -227,16 +227,17 @@ filter Select-Jobs {
 }
 
 # ====================================================================================
+Clear-Host
 . .\lib\Add-Module.ps1
 
 $jobData = Get-BackupJobs -sqliteDB $SQLiteDatabaseFile -servers $SourceServers | Select-Jobs
 
-if ($ListJobData) { $jobData | Format-Table }
+if ($ListJobData) { $jobData | Format-Table ; exit }
 
 $jobObjects = $jobData | Add-ExcludedFiles | Add-ExcludedDirs |
 Add-SrcDstParams | Add-CopyType | Add-Behavior | Add-TestSwitch
 
-if ($ListJobObjects) { $jobObjects }
+if ($ListJobObjects) { $jobObjects ; exit }
 
 if ($EnableLogging) {
  Remove-ExpiredLogs -daysBack -14

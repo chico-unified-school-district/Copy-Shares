@@ -8,3 +8,4 @@
 /jenkins.ps1
 *.gvy
 *.sqbpro
+/params.ps1
