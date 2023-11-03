@@ -5,3 +5,5 @@
 /jobs/*.csv
 /sqlite/jobs.sqbpro
 /sqlite/cusd-jobs.db
+/jenkins.ps1
+*.gvy
